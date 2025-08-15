@@ -21,3 +21,13 @@ Important! Assignments 1 and 2 have a late deadline but they can submitted anyti
 |44   | IO | 36,37,39,40 | 1,2, 6 |
 |45   | | | |
 |46   | Recap | | |
+
+## Assignments
+
+The assignments will be managed using [Quickfeed](https://uis.itest.run/)
+
+After you have enrolled in the course on QuickFeed you can access the assignments at <https://github.com/dat320-2025/assignments>.
+
+## Discord
+
+We have a [Discord server](https://discord.gg/xTGBsGn2W3) for the course where you can ask questions and discuss with other students and the teaching staff.
