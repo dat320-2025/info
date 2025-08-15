@@ -4,7 +4,8 @@ Book: <https://pages.cs.wisc.edu/~remzi/OSTEP/>
 
 ## Lecture Schedule
 
-Important! Assignments 1 and 2 have a late deadline but they can submitted anytime.
+> [!IMPORTANT]  
+> **Important! Assignments 1 and 2 have a late deadline but they can submitted anytime.**
 
 |Week | Main Topic | Book Chapters | Assignments |
 |-----|------------|---------------|-------------|
