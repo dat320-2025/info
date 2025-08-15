@@ -18,7 +18,8 @@ The tutorial is quite comprehensive and should guide you through the process.
 
 ### Manually installing WSL
 
-**Important: the following steps are not required if you followed the tutorial above**
+> [!IMPORTANT]  
+> **The following steps are not required if you followed the tutorial above**
 
 
 In short you need to run PowerShell as the administrator and issue the following commands:
