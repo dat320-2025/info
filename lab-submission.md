@@ -13,7 +13,7 @@ Note that the videos were recorded in a previous semester, and some details may 
 
 1. Initially, you will get access to two repositories when you have signed up on QuickFeed.
 
-   The first is the [`assignments`](https://github.com/dat515-2025/assignments) repository, which is where we publish all lab assignments, skeleton code and additional information.
+   The first is the [`assignments`](https://github.com/dat320-2025/assignments) repository, which is where we publish all lab assignments, skeleton code and additional information.
    You only have read access to this repository, and its content may change throughout the semester, as we add new assignments or fix problems.
 
    The second is your own private repository named `username-labs`.
@@ -55,31 +55,31 @@ Note that the videos were recorded in a previous semester, and some details may 
    We made a video [tutorial (19:34)](https://youtu.be/qik3HHZW6C0) describing the steps to set up SSH keys for GitHub authentication.
 
 3. To get started, decide on a suitable location for your workspace for the course.
-   In this guide we will use `$HOME/dat515-2025` as the workspace.
+   In this guide we will use `$HOME/dat320-2025` as the workspace.
    Do the following making sure to replace `username` with your GitHub user name:
 
    ```console
-   mkdir $HOME/dat515-2025
-   cd $HOME/dat515-2025
+   mkdir $HOME/dat320-2025
+   cd $HOME/dat320-2025
    ```
 
    Alternative 1 (using the `gh` tool):
 
    ```console
-   gh repo clone dat515-2025/username-labs assignments
+   gh repo clone dat320-2025/username-labs assignments
    ```
 
    Alternative 2 (using `git` directly; assuming you have set up your GitHub user with SSH keys):
 
    ```console
-   git clone git@github.com:dat515-2025/username-labs assignments
+   git clone git@github.com:dat320-2025/username-labs assignments
    ```
 
 4. Next, you will need to add the course's `assignments` repository as a remote repository.
 
    ```console
    cd assignments
-   git remote add course-assignments git@github.com:dat515-2025/assignments
+   git remote add course-assignments git@github.com:dat320-2025/assignments
    git pull course-assignments main
    ```
 
@@ -110,7 +110,7 @@ Note that the videos were recorded in a previous semester, and some details may 
 8. In summary, these are the typical steps that are necessary to make changes to files, add those changes to staging, commit changes and push changes to your own private repository on GitHub:
 
    ```console
-   cd $HOME/dat515-2025/assignments/lab1
+   cd $HOME/dat320-2025/assignments/lab1
    vim shell_questions.md
    # make your edits and save
    git add shell_questions.md
@@ -172,7 +172,7 @@ Note that the videos were recorded in a previous semester, and some details may 
 
 ## Update Local Working Copy from Course Assignments
 
-1. The teaching staff may publish updates to the course's [assignments](https://github.com/dat515-2025/assignments) repository, e.g. new or updated lab assignments.
+1. The teaching staff may publish updates to the course's [assignments](https://github.com/dat320-2025/assignments) repository, e.g. new or updated lab assignments.
 
    First, check that your local working copy is clean using `git status`, which should instruct you to either commit your local changes or to restore any files whose changes you want to discard.
 
@@ -235,13 +235,13 @@ Note that the videos were recorded in a previous semester, and some details may 
 
 To work on group assignments, you need to clone your group's repository to your own machine, and pull the `assignments` repository into the group's repository.
 In the instructions below, replace `groupname` with your group's repository name.
-We assume you have already created the `dat515-2025` directory on your machine.
+We assume you have already created the `dat320-2025` directory on your machine.
 
 ```console
-cd $HOME/dat515-2025
-git clone git@github.com:dat515-2025/groupname.git
+cd $HOME/dat320-2025
+git clone git@github.com:dat320-2025/groupname.git
 cd groupname
-git remote add course-assignments git@github.com:dat515-2025/assignments
+git remote add course-assignments git@github.com:dat320-2025/assignments
 git pull course-assignments main
 ```
 
