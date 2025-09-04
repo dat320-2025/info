@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int * increment_in_stack(int v){
+        int c=v+1;  
+        //allocate memory for the integer (here d is a pointer at the heap)
+        int * d = malloc(sizeof(int)); 
+        //the address that d is pointing at now holds the value in c
+        *d=c;
+        return d;
+    }
+    
+int main()
+{
+    int *a;
+    printf("The pointer a is pointing to address %p and the value there is %d \n", a, *a);
+    printf("increment_in_stack(10):\n");
+    a=increment_in_stack(10);
+    printf("The pointer a is pointing to address %p and the value there is %d \n", a, *a);
+    printf("Kind of works, and it should \n");
+    printf("---------------- \n");
+
+    int *b;
+    printf("The pointer b is pointing to address %p and the value there is %d \n", b, *b);
+    printf("After increment_in_stack(50):\n");
+    b=increment_in_stack(50);
+   
+    
+    printf("Now the address of b is pointing to address %p and the value there is %d \n", b, *b);
+    printf("Now the address of a is pointing to address %p and the value there is %d \n", a, *a);
+
+    printf("Now the address of b is pointing to address %p and the value there is %d \n", b, *b);
+    printf("WHAT !!!!!!!!!!!!\n");
+     int i=0;
+    while (i<10)
+    {
+       i++;
+       printf("..\n");
+    }
+    printf("Now the address of a is pointing to address %p and the value there is %d \n", a, *a);
+     printf("Now the address of b is pointing to address %p and the value there is %d \n", b, *b);
+
+    printf("Normal behavior !!!!!!!!!!!!\n");
+    
+    return 0;
+}
