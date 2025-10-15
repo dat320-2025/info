@@ -40,6 +40,7 @@ func AvoidRaceConditionRun() {
 
 	increment := func() {
 		for i := 0; i < 1000000; i++ {
+			//critical section
 			mu.Lock()
 			counter++
 			mu.Unlock()

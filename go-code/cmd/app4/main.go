@@ -6,9 +6,9 @@ import (
 
 func main() {
 
-	//conc.RaceConditionRun()
-	//conc.AvoidRaceConditionRun()
-	conc.CountUpAndDownTest(20)
+	conc.RaceConditionRun()
+	conc.AvoidRaceConditionRun()
+	//conc.CountUpAndDownTest(20)
 	//conc.RunAgentDemo()
 	//conc.RunCondVar()
 
